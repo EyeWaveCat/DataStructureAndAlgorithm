@@ -16,15 +16,16 @@ typedef struct SeqList
     int size; //数组长度
 };
 
-SqList ListCreate();
+SqList& ListCreate(SqList &L);
 bool ListInsert(SqList &L,int i,ElemType e);
 bool ListDelete(SqList &L,int i,ElemType &e);
 int ListLocated(SqList &L,ElemType e);
 int ListLength(SqList &L);
-ElemType ListGet(SqList &L,int i);
+ElemType& ListGet(SqList &L,int i);
 bool isEmpty(SqList &L);
 void ListPrint(SqList &L);
 bool ListClear(SqList &L);
+bool RandomListInit(SqList &L,int length);
 
 
 #endif 
